@@ -4,11 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Rumo ao 1000 — Flashcards das 5 Competências da Redação</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=optional">
-<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=optional" rel="stylesheet"></noscript>
 <link rel="preload" as="image" href="combo.avif" fetchpriority="high">
 <style>
   :root{
@@ -20,25 +15,25 @@
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{ font-family:'Poppins',sans-serif; color:var(--ink); background:var(--cream);
+  body{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--cream);
     line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden; padding-top:40px; }
-  h1,h2,h3,.display{ font-family:'Antonio',sans-serif; font-weight:700; text-transform:uppercase;
-    letter-spacing:0.3px; line-height:1.12; color:var(--ink); }
+  h1,h2,h3,.display{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:900; text-transform:uppercase;
+    letter-spacing:-0.5px; line-height:1.08; color:var(--ink); }
 
   /* ================= COUNTDOWN BAR ================= */
   .countdown-bar{ position:fixed; top:0; left:0; right:0; z-index:150; background:var(--ink); color:#fff;
     text-align:center; font-size:12px; font-weight:600; padding:10px 14px; cursor:pointer;
     border-bottom:1px solid rgba(255,255,255,0.12); }
-  .countdown-bar b{ color:var(--coral-soft); font-family:'Antonio'; font-size:15px; letter-spacing:0.4px;
+  .countdown-bar b{ color:var(--coral-soft); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:15px; letter-spacing:0.4px;
     font-weight:700; margin-left:2px; }
   a{text-decoration:none; color:inherit;}
   img{display:block; max-width:100%;}
   .wrap{max-width:1180px; margin:0 auto; padding:0 20px;}
   .eyebrow{ display:inline-flex; align-items:center; gap:8px; background:var(--ink); color:var(--cream);
-    font-family:'Poppins'; font-weight:700; font-size:11.5px; letter-spacing:1.2px;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:700; font-size:11.5px; letter-spacing:1.2px;
     padding:7px 14px; border-radius:30px; text-transform:uppercase; }
   .btn{ display:flex; align-items:center; justify-content:center; gap:10px; width:100%;
-    background:var(--ink); color:var(--cream); font-family:'Poppins'; font-weight:700;
+    background:var(--ink); color:var(--cream); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:700;
     font-size:16px; padding:18px 24px; border-radius:12px; border:none; cursor:pointer;
     box-shadow:0 6px 0 #0E0A1D; transition:transform .12s ease, box-shadow .12s ease; }
   .btn:active{ transform:translateY(3px); box-shadow:0 3px 0 #0E0A1D; }
@@ -47,23 +42,21 @@
   .center{text-align:center;}
   .section{ padding:56px 0; }
   .section-tight{ padding:40px 0; }
-  .kicker{ font-family:'Poppins'; font-weight:700; font-size:12px; letter-spacing:1.6px;
+  .kicker{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:700; font-size:12px; letter-spacing:1.6px;
     text-transform:uppercase; color:var(--coral); margin-bottom:12px; display:block; }
 
   /* ================= HERO ================= */
-  .hero{ position:relative; background:var(--cream);
-    background-image: repeating-linear-gradient(to bottom, transparent 0 30px, var(--line) 30px 31px);
-    background-position: 0 100px; overflow:hidden; padding:26px 0 32px; }
-  .hero-nav{ display:flex; align-items:center; justify-content:flex-start; padding-bottom:28px; }
+  .hero{ position:relative; background:var(--cream); overflow:hidden; padding:26px 0 32px; }
+  .hero-nav{ display:flex; align-items:center; justify-content:center; padding-bottom:28px; }
   .logo-img{ height:38px; width:auto; }
 
   .hero-grid{ display:flex; flex-direction:column; }
-  .hero-mockup{ position:relative; display:flex; justify-content:center; margin:6px 0 26px; order:1;
+  .hero-mockup{ position:relative; display:flex; justify-content:center; margin:6px 0 30px; order:1;
     perspective:900px; cursor:pointer; }
-  .mockup-img{ width:72%; max-width:290px; height:auto; border-radius:12px;
+  .mockup-img{ width:84%; max-width:360px; height:auto; border-radius:12px;
     box-shadow:0 22px 40px -14px rgba(27,21,51,0.4), 0 0 0 8px #fff, 0 0 0 9px var(--line);
     transform:rotate(3deg); }
-  .mockup-img-combo{ width:92%; max-width:380px; height:auto; border-radius:22px; border:4px solid var(--coral);
+  .mockup-img-combo{ width:96%; max-width:440px; height:auto; border-radius:22px; border:4px solid var(--coral);
     background:var(--paper); box-shadow:0 26px 50px -16px rgba(27,21,51,0.4); transform:none;
     transition:transform .18s ease-out; will-change:transform; }
   .mockup-badge{ position:absolute; top:2%; left:8%; background:var(--ink); color:var(--cream);
@@ -71,8 +64,8 @@
     align-items:center; justify-content:center; transform:rotate(-9deg);
     box-shadow:0 0 0 5px var(--cream), 0 8px 18px rgba(0,0,0,0.25);
     transition:transform .18s ease-out; will-change:transform; }
-  .mockup-badge .num{ font-family:'Antonio'; font-size:21px; line-height:1; }
-  .mockup-badge .lbl{ font-family:'Poppins'; font-size:7px; font-weight:700; letter-spacing:0.6px; margin-top:1px; text-transform:uppercase;}
+  .mockup-badge .num{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:21px; line-height:1; }
+  .mockup-badge .lbl{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:7px; font-weight:700; letter-spacing:0.6px; margin-top:1px; text-transform:uppercase;}
 
   .price-burst{ position:absolute; bottom:-2%; right:8%; width:104px; height:104px;
     background:var(--ink); color:var(--cream); display:flex; flex-direction:column;
@@ -83,33 +76,32 @@
       95% 58%,100% 71%,86% 71%,84% 85%,71% 79%,64% 91%,54% 80%,41% 92%,34% 79%,20% 84%,
       20% 70%,6% 70%,12% 57%,0% 49%,11% 40%,4% 27%,17% 25%,15% 11%,28% 15%,34% 2%,46% 11%); }
   .price-burst .tag{ font-size:6.5px; font-weight:700; letter-spacing:0.6px; text-transform:uppercase; opacity:0.75; }
-  .price-burst .val{ font-family:'Antonio'; font-size:18px; line-height:1; margin:1px 0; }
+  .price-burst .val{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:18px; line-height:1; margin:1px 0; }
   .price-burst .parc{ font-size:6.8px; font-weight:600; max-width:64px; line-height:1.2; }
 
-  .hero-copy{ order:2; }
+  .hero-copy{ order:2; text-align:center; display:flex; flex-direction:column; align-items:center; }
   .hero-copy h1{ font-size:clamp(34px,9vw,44px); margin-bottom:16px; }
   .hero-copy h1 .hl{ color:var(--coral); }
-  .hero-sub{ font-size:16px; color:var(--ink-soft); margin-bottom:22px; }
+  .hero-sub{ font-size:16px; color:var(--ink-soft); margin-bottom:22px; max-width:440px; }
   .hero-sub b{ color:var(--ink); }
 
-  .price-line{ display:flex; align-items:center; justify-content:center; gap:10px; background:#fff; border:2px solid var(--ink);
-    border-radius:12px; padding:10px 16px; margin-bottom:18px; width:100%; }
-  .price-line .now{ font-family:'Antonio'; font-size:19px; color:var(--coral); line-height:1.1; }
-  .price-line .now .pre{ font-size:14px; font-weight:400; opacity:0.85; margin-right:3px; }
-  .price-line .now .final{ font-size:25px; font-weight:700; }
-  .price-line .inst{ font-size:11.5px; color:var(--ink-soft); font-weight:600; line-height:1.3; border-left:2px solid var(--line); padding-left:10px; }
+  .price-line{ display:flex; flex-direction:column; align-items:center; gap:4px; margin-bottom:20px; width:100%; }
+  .price-line .now{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; color:var(--coral); line-height:1; }
+  .price-line .now .pre{ display:block; font-size:15px; font-weight:500; opacity:0.75; margin-bottom:2px; }
+  .price-line .now .final{ font-size:46px; font-weight:900; letter-spacing:-1px; }
+  .price-line .inst{ font-size:13px; color:var(--ink-soft); font-weight:600; }
 
-  .hero-ctas{ display:flex; flex-direction:column; gap:14px; margin-bottom:16px; }
+  .hero-ctas{ display:flex; flex-direction:column; align-items:center; gap:14px; margin-bottom:16px; width:100%; }
   .hero-note{ font-size:12.5px; color:var(--ink-soft); font-style:italic; text-align:center; }
 
   .hero-stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:30px; text-align:center; }
   .stat{ background:#fff; border:1.5px solid var(--line); border-radius:12px; padding:12px 6px; }
-  .stat b{ font-family:'Antonio'; font-size:24px; display:block; color:var(--coral); line-height:1;}
+  .stat b{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:24px; display:block; color:var(--coral); line-height:1;}
   .stat span{ font-size:10.5px; color:var(--ink-soft); font-weight:600; display:block; margin-top:3px; line-height:1.2; }
 
   /* ================= MARQUEE ================= */
   .marquee-section{ background:var(--ink); padding:26px 0; overflow:hidden; }
-  .marquee-label{ text-align:center; color:var(--cream); font-family:'Poppins'; font-weight:700;
+  .marquee-label{ text-align:center; color:var(--cream); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:700;
     letter-spacing:1.6px; font-size:11px; text-transform:uppercase; opacity:0.6; margin-bottom:16px; }
   .marquee-track{ display:flex; width:max-content; animation:scroll 26s linear infinite; }
   .marquee-track img{ height:190px; width:auto; border-radius:8px; margin-right:12px; box-shadow:0 10px 22px rgba(0,0,0,0.35); }
@@ -117,11 +109,13 @@
 
   /* ================= DOR ================= */
   .dor{ background:var(--paper); }
+  .ciclo-espelho{ font-size:18px; font-style:italic; color:var(--ink-soft); text-align:center;
+    max-width:560px; margin:18px auto 8px; line-height:1.5; }
   .dor h2{ font-size:clamp(26px,7.5vw,34px); margin-bottom:26px; }
   .quote-stack{ display:flex; flex-direction:column; gap:14px; margin-top:26px; }
   .quote-card{ background:#fff; border:2px solid var(--ink); border-radius:14px; padding:18px 20px;
     font-style:italic; font-size:14.5px; position:relative; }
-  .quote-card::before{ content:"\201C"; font-family:'Antonio'; font-size:40px; color:var(--coral);
+  .quote-card::before{ content:"\201C"; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:40px; color:var(--coral);
     position:absolute; top:-4px; left:12px; line-height:1; }
   .quote-card p{ padding-left:20px; }
   .dor-list{ list-style:none; display:flex; flex-direction:column; gap:14px; }
@@ -136,7 +130,7 @@
   .steps{ display:flex; flex-direction:column; gap:18px; }
   .step{ background:#fff; border-radius:16px; padding:24px 22px; border:2px solid var(--ink);
     box-shadow:5px 5px 0 var(--ink); }
-  .step .n{ font-family:'Antonio'; font-size:34px; color:var(--coral); line-height:1; margin-bottom:10px; }
+  .step .n{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:34px; color:var(--coral); line-height:1; margin-bottom:10px; }
   .step h3{ font-size:19px; margin-bottom:8px; text-transform:none; }
   .step p{ font-size:14px; color:var(--ink-soft); }
 
@@ -147,7 +141,7 @@
   .comp-intro{ color:#C9C3DD; font-size:15px; margin-bottom:30px; }
   .comp-grid{ display:flex; flex-direction:column; gap:14px; }
   .comp-card{ border-radius:16px; padding:22px 20px; display:flex; flex-direction:column; }
-  .comp-card .cn{ font-family:'Antonio'; font-size:32px; line-height:1; margin-bottom:8px; }
+  .comp-card .cn{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:32px; line-height:1; margin-bottom:8px; }
   .comp-card h3{ font-size:18px; text-transform:none; margin-bottom:8px; line-height:1.15; color:var(--ink); }
   .comp-card p{ font-size:14px; color:var(--ink); opacity:0.85; }
   .comp-card .tag{ font-size:10.5px; font-weight:700; letter-spacing:0.6px; text-transform:uppercase;
@@ -160,7 +154,7 @@
   .bonus-card{ background:#fff; border-radius:16px; padding:22px; border:2px solid var(--line);
     display:flex; gap:16px; align-items:flex-start; }
   .bonus-ico{ width:44px; height:44px; border-radius:11px; background:var(--gold); flex-shrink:0;
-    display:flex; align-items:center; justify-content:center; font-family:'Antonio'; font-size:18px; color:#fff;}
+    display:flex; align-items:center; justify-content:center; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:18px; color:#fff;}
   .bonus-card h3{ font-size:17px; text-transform:none; margin-bottom:5px; }
   .bonus-card p{ font-size:13.5px; color:var(--ink-soft); }
 
@@ -186,15 +180,14 @@
   .faq-item{ background:#fff; border-radius:12px; border:2px solid var(--ink); overflow:hidden; }
   .faq-q{ padding:16px 18px; font-weight:600; font-size:14.5px; cursor:pointer; display:flex;
     justify-content:space-between; align-items:center; gap:14px; }
-  .faq-q .plus{ font-family:'Antonio'; font-size:22px; color:var(--coral); flex-shrink:0; transition:transform .2s; }
+  .faq-q .plus{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:22px; color:var(--coral); flex-shrink:0; transition:transform .2s; }
   .faq-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; padding:0 18px; }
   .faq-a p{ padding-bottom:16px; font-size:13.5px; color:var(--ink-soft); }
   .faq-item.open .faq-a{ max-height:260px; }
   .faq-item.open .plus{ transform:rotate(45deg); }
 
   /* ================= CTA FINAL ================= */
-  .cta-final{ background:var(--coral); text-align:center; position:relative; overflow:hidden;
-    background-image: repeating-linear-gradient(to bottom, transparent 0 30px, #FF6E6E 30px 31px); }
+  .cta-final{ background:var(--coral); text-align:center; position:relative; overflow:hidden; }
   .cta-final h2{ color:var(--cream); font-size:clamp(28px,8vw,40px); margin:16px 0 12px; }
   .cta-final p{ color:var(--cream); font-size:15.5px; margin:0 auto 24px; opacity:0.95; }
   .cta-final .price-line{ margin:0 auto 20px; max-width:320px; }
@@ -218,7 +211,7 @@
   .lifestyle p{ color:#C9C3DD; font-size:15px; margin-bottom:22px; }
   .lifestyle-list{ list-style:none; display:flex; flex-direction:column; gap:12px; }
   .lifestyle-list li{ display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--cream); }
-  .lifestyle-list li b{ color:var(--coral-soft); flex-shrink:0; font-family:'Antonio'; font-size:18px; }
+  .lifestyle-list li b{ color:var(--coral-soft); flex-shrink:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:18px; }
 
   /* ================= PRODUCT BOX ================= */
   .pbox-wrap{ background:var(--paper); }
@@ -236,6 +229,18 @@
   .depo-name{ font-weight:700; font-size:15px; color:var(--ink); }
   .depo-stars{ color:#F5B942; font-size:13px; letter-spacing:1px; margin-top:1px; }
   .depo-text{ font-size:14.5px; color:var(--ink-soft); font-style:italic; line-height:1.5; }
+  .stack-valor{ background:#fff; border:2px solid var(--ink); border-radius:16px; padding:22px 20px; margin-top:26px; }
+  .stack-item{ display:flex; justify-content:space-between; align-items:center; gap:10px;
+    padding:11px 0; border-bottom:1.5px dashed var(--line); font-size:14.5px; }
+  .stack-item .stack-nome{ color:var(--ink); }
+  .riscado{ color:#B23A3A; text-decoration:line-through; font-weight:600; white-space:nowrap; }
+  .bonus-tag{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.4px;
+    color:var(--coral); background:#FFE9E9; padding:3px 10px; border-radius:20px; white-space:nowrap; }
+  .stack-total{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;
+    padding-top:16px; margin-top:6px; font-size:14.5px; font-weight:700; color:var(--ink); }
+  .stack-total-preco{ font-size:16px; }
+  .stack-total-preco b{ color:var(--coral); font-size:22px; }
+
   .plans-grid{ display:flex; flex-direction:column; gap:22px; margin-top:28px; }
   .pbox{ background:#fff; border-radius:22px; overflow:hidden; box-shadow:0 20px 50px -20px rgba(27,21,51,0.35);
     border:2px solid var(--ink); position:relative; flex:1; }
@@ -243,20 +248,19 @@
   .pbox-ribbon{ position:absolute; top:14px; right:-34px; background:var(--coral); color:#fff; font-size:11px;
     font-weight:700; letter-spacing:0.5px; padding:5px 40px; transform:rotate(40deg); box-shadow:0 4px 10px rgba(0,0,0,0.2); z-index:2; }
   .pbox-img{ position:relative; background:var(--coral);
-    background-image: repeating-linear-gradient(to bottom, transparent 0 26px, #FF6E6E 26px 27px);
     padding:24px 0 14px; display:flex; justify-content:center; }
   .pbox-img img{ width:48%; max-width:190px; height:auto; border-radius:10px; box-shadow:0 16px 30px rgba(0,0,0,0.3); transform:rotate(-3deg); }
   .pbox-img-combo img{ width:78%; max-width:280px; height:auto; transform:none; border-radius:16px;
     border:3px solid var(--coral); box-shadow:0 14px 26px rgba(0,0,0,0.25); transition:transform .18s ease-out; }
   .pbox-img-combo img:hover{ transform:scale(1.03) rotate(-1deg); }
   .pbox-body{ padding:26px 24px 26px; }
-  .pbox-body h3{ font-family:'Poppins'; font-weight:700; font-size:19px; text-transform:none;
+  .pbox-body h3{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:700; font-size:19px; text-transform:none;
     color:var(--ink); margin-bottom:8px; }
   .pbox-tag{ display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.6px; text-transform:uppercase;
     color:var(--coral); background:#FFE9E9; padding:3px 10px; border-radius:20px; margin-bottom:10px; }
   .pbox-price-row{ display:flex; align-items:baseline; gap:10px; margin-bottom:2px; flex-wrap:wrap; }
   .pbox-old{ font-size:13px; color:#9A93AE; text-decoration:line-through; }
-  .pbox-new{ font-family:'Antonio'; font-size:34px; color:var(--coral); line-height:1; }
+  .pbox-new{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:34px; color:var(--coral); line-height:1; }
   .pbox-unit{ font-size:12px; color:var(--ink-soft); font-weight:600; }
   .pbox-inst{ font-size:12px; color:var(--ink-soft); font-weight:600; margin-bottom:14px; }
   .pbox-desc{ font-size:13.5px; color:var(--ink-soft); margin-bottom:16px; }
@@ -277,11 +281,10 @@
   .modal-close{ position:absolute; top:12px; right:14px; background:rgba(27,21,51,0.08); border:none;
     width:32px; height:32px; border-radius:50%; font-size:18px; color:var(--ink); cursor:pointer; z-index:2;
     display:flex; align-items:center; justify-content:center; }
-  .modal-top{ background:var(--ink); color:#fff; padding:22px 24px 18px;
-    background-image: repeating-linear-gradient(to bottom, transparent 0 22px, #2A2148 22px 23px); }
+  .modal-top{ background:var(--ink); color:#fff; padding:22px 24px 18px; }
   .modal-top .tag{ display:inline-block; background:var(--coral); color:#fff; font-size:11px; font-weight:700;
     letter-spacing:0.6px; text-transform:uppercase; padding:4px 12px; border-radius:20px; margin-bottom:12px; }
-  .modal-top h3{ font-family:'Antonio'; font-size:26px; line-height:1.05; text-transform:uppercase; margin-bottom:6px; }
+  .modal-top h3{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:26px; line-height:1.05; text-transform:uppercase; margin-bottom:6px; }
   .modal-top p{ font-size:13.5px; color:#C9C3DD; }
   .modal-body{ padding:22px 24px 26px; }
   .modal-combo-img{ width:100%; display:flex; justify-content:center; background:var(--paper);
@@ -290,7 +293,7 @@
   .modal-price-row{ display:flex; align-items:baseline; gap:10px; margin-bottom:2px; }
   .modal-old{ font-size:15px; color:#B23A3A; text-decoration:line-through; }
   .modal-off{ font-size:11.5px; font-weight:700; color:#fff; background:var(--c2); padding:2px 8px; border-radius:20px; }
-  .modal-new{ font-family:'Antonio'; font-size:38px; color:var(--coral); line-height:1; margin:4px 0 2px; }
+  .modal-new{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:38px; color:var(--coral); line-height:1; margin:4px 0 2px; }
   .modal-inst{ font-size:12.5px; color:var(--ink-soft); font-weight:600; margin-bottom:16px; }
   .modal-list{ list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:20px; }
   .modal-list li{ display:flex; gap:9px; align-items:flex-start; font-size:13.5px; color:var(--ink); }
@@ -358,7 +361,7 @@
     .dif-row{ display:grid; grid-template-columns:1.4fr 1fr 1fr; }
     .dif-row.head{ display:grid; }
     .dif-row > div{ padding:18px 22px; font-size:14.5px; display:flex; align-items:center; }
-    .dif-row.head > div{ font-family:'Poppins'; font-weight:700; font-size:13px; letter-spacing:0.5px;
+    .dif-row.head > div{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:700; font-size:13px; letter-spacing:0.5px;
       text-transform:uppercase; background:var(--ink); color:var(--cream); }
     .dif-row > div[data-label]::before{ content:none; }
 
@@ -514,6 +517,7 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
 <section class="dor section">
   <div class="wrap">
     <span class="kicker">Se isso soa familiar</span>
+    <p class="ciclo-espelho">Você recomeça a cada simulado, tentando lembrar o que já tinha estudado. Se cobra por não evoluir tão rápido quanto achava que deveria. E se compara com quem parece escrever redação nota 1000 sem esforço — enquanto você ainda nem sabe exatamente onde está o seu erro.</p>
     <div class="dor-grid">
       <div>
         <h2>Você estuda. Treina. E a nota da redação simplesmente <span style="color:var(--coral)">não sai do lugar.</span></h2>
@@ -658,6 +662,29 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
     <span class="kicker" style="display:block; text-align:center;">Escolha seu plano</span>
     <h2 class="center" style="font-size:clamp(26px,7.5vw,40px); margin-bottom:30px;">Garanta o seu acesso</h2>
 
+    <div class="stack-valor">
+      <div class="stack-item">
+        <span class="stack-nome">150 Flashcards das 5 Competências</span>
+        <span class="stack-preco"><span class="riscado">R$ 19,90</span></span>
+      </div>
+      <div class="stack-item">
+        <span class="stack-nome">Caderno de Exercícios — 75 exercícios</span>
+        <span class="stack-preco"><span class="bonus-tag">bônus</span></span>
+      </div>
+      <div class="stack-item">
+        <span class="stack-nome">Banco de Repertório — 60 cards</span>
+        <span class="stack-preco"><span class="bonus-tag">bônus</span></span>
+      </div>
+      <div class="stack-item">
+        <span class="stack-nome">Checklists de revisão por competência</span>
+        <span class="stack-preco"><span class="bonus-tag">incluso</span></span>
+      </div>
+      <div class="stack-total">
+        <span>Hoje, tudo isso:</span>
+        <span class="stack-total-preco"><span class="riscado">De R$ 39,90</span> por <b>R$ 27,90</b></span>
+      </div>
+    </div>
+
     <div class="plans-grid">
 
       <div class="pbox">
@@ -769,6 +796,18 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
       <div class="faq-item">
         <div class="faq-q">Como faço o pagamento? <span class="plus">+</span></div>
         <div class="faq-a"><p>Você pode pagar via Pix, com liberação imediata do material, ou parcelar em até 3x sem juros no cartão.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">É seguro pagar por Pix? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Sim. O pagamento é processado por uma plataforma de checkout homologada, a mesma tecnologia usada por milhares de negócios digitais no Brasil. Você recebe a confirmação na hora e o acesso ao material é liberado automaticamente, sem precisar aguardar aprovação manual.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">E se eu não tiver tempo de estudar todo dia? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Sem problema. O método foi pensado pra encaixar na rotina real: alguns cards por dia, 15-20 minutos, já fazem diferença. Não é curso com aula ao vivo nem prazo pra terminar — você estuda no seu ritmo, revisando quando puder.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">E se eu não gostar do material? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Você tem 7 dias de garantia incondicional. Se por qualquer motivo não for pra você, é só pedir o reembolso — devolvemos 100% do valor, sem perguntas.</p></div>
       </div>
     </div>
   </div>
