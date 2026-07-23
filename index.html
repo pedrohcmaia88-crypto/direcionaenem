@@ -99,10 +99,19 @@
   .stat b{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:24px; display:block; color:var(--coral); line-height:1;}
   .stat span{ font-size:10.5px; color:var(--ink-soft); font-weight:600; display:block; margin-top:3px; line-height:1.2; }
 
+  /* ================= PROVA CURTA ================= */
+  .prova-curta{ background:var(--ink); padding:14px 0; text-align:center; }
+  .prova-curta p{ color:var(--cream); font-size:13.5px; font-weight:500; line-height:1.4; }
+  .prova-curta b{ color:var(--coral-soft); font-weight:800; }
+
   /* ================= MARQUEE ================= */
   .marquee-section{ background:var(--ink); padding:26px 0; overflow:hidden; }
   .marquee-label{ text-align:center; color:var(--cream); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:700;
-    letter-spacing:1.6px; font-size:11px; text-transform:uppercase; opacity:0.6; margin-bottom:16px; }
+    letter-spacing:1.6px; font-size:11px; text-transform:uppercase; opacity:0.6; margin-bottom:10px; }
+  .marquee-title{ text-align:center; color:var(--cream); font-size:clamp(24px,7vw,32px); margin-bottom:26px; padding:0 20px; }
+  .estudo-fixo{ display:flex; justify-content:center; margin-bottom:30px; padding:0 20px; }
+  .estudo-fixo picture{ display:block; margin:0 auto; }
+  .estudo-fixo img{ width:78%; max-width:320px; height:auto; border-radius:16px; box-shadow:0 20px 40px rgba(0,0,0,0.4); display:block; margin:0 auto; }
   .marquee-track{ display:flex; width:max-content; animation:scroll 26s linear infinite; }
   .marquee-track img{ height:190px; width:auto; border-radius:8px; margin-right:12px; box-shadow:0 10px 22px rgba(0,0,0,0.35); }
   @keyframes scroll{ 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
@@ -162,12 +171,11 @@
   .dif-table{ margin-top:28px; background:#fff; border-radius:16px; overflow:hidden; border:2px solid var(--ink); }
   .dif-row{ display:flex; flex-direction:column; }
   .dif-row.head{ display:none; }
-  .dif-row > div{ padding:10px 18px; font-size:13.5px; }
-  .dif-row:not(.head){ border-top:1px solid var(--line); padding:8px 0; }
-  .dif-row:not(.head) > div:first-child{ font-weight:700; padding-bottom:2px; }
-  .dif-row > div[data-label]::before{ content: attr(data-label); display:block; font-size:10px;
-    font-weight:700; text-transform:uppercase; color:var(--coral); margin-bottom:2px; }
-  .dif-row .yes{ color:var(--c2); font-weight:700; }
+  .dif-row:not(.head){ border-top:1px solid var(--line); padding:14px 0; }
+  .dif-crit{ padding:0 18px 8px; font-weight:700; font-size:14px; color:var(--ink); }
+  .dif-cell{ margin:5px 18px; padding:11px 14px; border-radius:10px; font-size:13.5px; line-height:1.4; }
+  .dif-x{ background:#EDEDED; color:#6B6B6B; }
+  .dif-check{ background:var(--c2-tint); color:var(--ink); font-weight:600; }
 
   /* ================= CONFIANÇA ================= */
   .conf-box{ background:#fff; border:2px dashed var(--ink); border-radius:16px; padding:26px;
@@ -209,9 +217,11 @@
   .lifestyle-img{ width:100%; height:auto; border-radius:16px; margin-bottom:28px; box-shadow:0 20px 40px rgba(0,0,0,0.35); }
   .lifestyle h2{ color:var(--cream); font-size:clamp(26px,7.5vw,38px); margin-bottom:14px; }
   .lifestyle p{ color:#C9C3DD; font-size:15px; margin-bottom:22px; }
-  .lifestyle-list{ list-style:none; display:flex; flex-direction:column; gap:12px; }
-  .lifestyle-list li{ display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--cream); }
-  .lifestyle-list li b{ color:var(--coral-soft); flex-shrink:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:18px; }
+  .beneficios-grid{ list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:8px; }
+  .beneficios-grid li{ background:var(--cream); border-radius:14px; padding:16px 14px; display:flex; flex-direction:column; gap:4px; }
+  .beneficios-grid .beneficio-ico{ font-size:22px; margin-bottom:4px; }
+  .beneficios-grid b{ color:var(--ink); font-size:13.5px; line-height:1.25; }
+  .beneficios-grid span:not(.beneficio-ico){ color:var(--ink-soft); font-size:12px; line-height:1.4; }
 
   /* ================= PRODUCT BOX ================= */
   .pbox-wrap{ background:var(--paper); }
@@ -229,6 +239,12 @@
   .depo-name{ font-weight:700; font-size:15px; color:var(--ink); }
   .depo-stars{ color:#F5B942; font-size:13px; letter-spacing:1px; margin-top:1px; }
   .depo-text{ font-size:14.5px; color:var(--ink-soft); font-style:italic; line-height:1.5; }
+  .bonus-combo-foto{ display:flex; flex-direction:column; align-items:center; margin-bottom:24px; }
+  .bonus-combo-foto img{ width:80%; max-width:320px; height:auto; border-radius:16px;
+    box-shadow:0 20px 40px rgba(27,21,51,0.25); }
+  .bonus-combo-legenda{ margin-top:12px; font-size:12.5px; font-weight:700; color:var(--ink-soft);
+    text-transform:uppercase; letter-spacing:0.4px; }
+
   .stack-valor{ background:#fff; border:2px solid var(--ink); border-radius:16px; padding:22px 20px; margin-top:26px; }
   .stack-item{ display:flex; justify-content:space-between; align-items:center; gap:10px;
     padding:11px 0; border-bottom:1.5px dashed var(--line); font-size:14.5px; }
@@ -357,13 +373,16 @@
     .bonus-ico{ width:52px; height:52px; font-size:22px; }
     .bonus-card h3{ font-size:19px; } .bonus-card p{ font-size:14.5px; }
 
+    .dif-boxes{ flex-direction:row; margin-top:44px; align-items:stretch; }
+    .dif-box{ flex:1; }
     .dif-table{ margin-top:44px; }
     .dif-row{ display:grid; grid-template-columns:1.4fr 1fr 1fr; }
     .dif-row.head{ display:grid; }
-    .dif-row > div{ padding:18px 22px; font-size:14.5px; display:flex; align-items:center; }
-    .dif-row.head > div{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-weight:700; font-size:13px; letter-spacing:0.5px;
+    .dif-row.head > div{ padding:18px 22px; font-weight:700; font-size:13px; letter-spacing:0.5px;
       text-transform:uppercase; background:var(--ink); color:var(--cream); }
-    .dif-row > div[data-label]::before{ content:none; }
+    .dif-row:not(.head){ padding:0; border-top:1px solid var(--line); }
+    .dif-crit{ padding:18px 22px; display:flex; align-items:center; }
+    .dif-cell{ margin:12px; }
 
     .conf-box{ padding:40px; max-width:760px; margin:44px auto 0; }
     .conf-box h3{ font-size:22px; } .conf-box p{ font-size:15.5px; }
@@ -381,7 +400,8 @@
     .lifestyle-img{ margin-bottom:0; }
     .lifestyle h2{ font-size:clamp(32px,4vw,46px); }
     .lifestyle p{ font-size:16.5px; }
-    .lifestyle-list li{ font-size:15.5px; }
+    .beneficios-grid li{ padding:20px 18px; }
+    .beneficios-grid b{ font-size:15px; } .beneficios-grid span:not(.beneficio-ico){ font-size:13px; }
 
     .pbox{ max-width:none !important; }
     .plans-grid{ flex-direction:row; max-width:820px; margin-left:auto; margin-right:auto; align-items:stretch; }
@@ -464,7 +484,7 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
 
       <div class="hero-copy">
         <span class="eyebrow">★ ENEM 2026 · Redação nota 1000</span>
-        <h1 style="margin-top:16px;">Domine as 5 competências com flashcards práticos <span class="hl">  e pare de perder pontos sem saber por quê.</span></h1>
+        <h1 style="margin-top:16px;">Domine as 5 competências com flashcards práticos e pare de perder pontos sem saber por quê.</h1>
         <p class="hero-sub">
           <b>150 flashcards</b> para imprimir, recortar e revisar as 5 competências que a banca
           realmente avalia, pensados pra quem já tentou uma vez e dessa vez quer saber
@@ -477,7 +497,7 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
         </div>
 
         <div class="hero-ctas">
-          <a href="#comprar" class="btn btn-coral" onclick="event.preventDefault(); document.getElementById('comprar').scrollIntoView({behavior:'smooth'});">Quero dominar as 5 competências</a>
+          <a href="#comprar" class="btn btn-coral" onclick="event.preventDefault(); document.getElementById('comprar').scrollIntoView({behavior:'smooth'});">Quero entender meus erros</a>
         </div>
         <p class="hero-note">Material 100% para imprimir em casa · sem gasto extra de tinta · uso imediato</p>
 
@@ -487,17 +507,23 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
         </div>
 
         <div class="hero-stats">
-          <div class="stat"><b>150</b><span>cards das 5 competências</span></div>
-          <div class="stat"><b>+60</b><span>cards de repertório</span></div>
-          <div class="stat"><b>75</b><span>exercícios práticos</span></div>
+          <div class="stat"><b>150</b><span>cards de estudo</span></div>
+          <div class="stat"><b>30</b><span>cards por competência</span></div>
+          <div class="stat"><b>5</b><span>competências oficiais</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+
+
 <section class="marquee-section">
   <p class="marquee-label">veja como são os cards por dentro</p>
+  <h2 class="marquee-title">Veja como você vai estudar com os cards na prática</h2>
+  <div class="estudo-fixo">
+    <picture><source srcset="estudo-pratica.avif" type="image/avif"><img src="estudo-pratica.webp" width="900" height="900" loading="lazy" alt="Estudando na prática com um card do Banco de Repertório em mãos"></picture>
+  </div>
   <div class="marquee-track">
     <picture><source srcset="card1-mobile.avif 260w, card1.avif 500w" sizes="(min-width:901px) 241px, 134px" type="image/avif"><img src="card1.webp" width="500" height="706" alt="Exemplo de flashcard"></picture>
     <picture><source srcset="card2-mobile.avif 260w, card2.avif 500w" sizes="(min-width:901px) 241px, 134px" type="image/avif"><img src="card2.webp" width="500" height="706" alt="Exemplo de flashcard"></picture>
@@ -574,14 +600,15 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
     <span class="kicker" style="color:var(--coral-soft);">No seu ritmo, na sua mesa</span>
     <h2>Feito para caber na sua rotina de estudo</h2>
     <p>Sem plataforma, sem login, sem depender de internet na hora de revisar. Espalha os cards na mesa, embaralha por competência e treina do jeito que a memória realmente fixa.</p>
-    <ul class="lifestyle-list">
-      <li><b>+</b> Imprima em casa, sem gasto extra de tinta (só frente)</li>
-      <li><b>+</b> Recorte e dobre: o card já sai pronto pra manusear</li>
-      <li><b>+</b> Organize por competência e cor, do seu jeito</li>
-      <li><b>+</b> Revise alguns cards por dia, no intervalo entre uma matéria e outra</li>
+    <ul class="beneficios-grid">
+      <li><span class="beneficio-ico">🖨️</span><b>Sem gasto extra</b><span>Imprime só frente, sem gastar tinta à toa</span></li>
+      <li><span class="beneficio-ico">✂️</span><b>Pronto em segundos</b><span>Recorta e dobra: o card já sai pronto pra usar</span></li>
+      <li><span class="beneficio-ico">🎨</span><b>Organiza do seu jeito</b><span>Por competência, por cor, como funciona pra você</span></li>
+      <li><span class="beneficio-ico">⏱️</span><b>Cabe na rotina</b><span>Revisa alguns cards por dia, no intervalo entre uma matéria e outra</span></li>
     </ul>
   </div>
 </section>
+
 
 <section class="comp section">
   <div class="wrap">
@@ -623,6 +650,7 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
   </div>
 </section>
 
+
 <section class="dif section">
   <div class="wrap">
     <span class="kicker">Por que não é "mais um PDF"</span>
@@ -630,29 +658,50 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
     <div class="dif-table">
       <div class="dif-row head">
         <div>Critério</div>
-        <div>Apostila comum</div>
-        <div>Rumo ao 1000</div>
+        <div>Sem o Rumo ao 1000</div>
+        <div>Com o Rumo ao 1000</div>
       </div>
       <div class="dif-row">
-        <div data-label="Critério">Organização</div>
-        <div data-label="Apostila comum">Dicas gerais misturadas</div>
-        <div data-label="Rumo ao 1000" class="yes">As 5 competências oficiais, separadas</div>
+        <div class="dif-crit">Organização</div>
+        <div class="dif-cell dif-x">✕ Você não sabe por onde começar a estudar</div>
+        <div class="dif-cell dif-check">✓ Estuda as 5 competências oficiais, uma de cada vez</div>
       </div>
       <div class="dif-row">
-        <div data-label="Critério">Formato de estudo</div>
-        <div data-label="Apostila comum">Texto corrido pra ler uma vez</div>
-        <div data-label="Rumo ao 1000" class="yes">Flashcard físico pra repetir</div>
+        <div class="dif-crit">Formato de estudo</div>
+        <div class="dif-cell dif-x">✕ Lê uma vez e esquece</div>
+        <div class="dif-cell dif-check">✓ Repete com flashcard até virar reflexo</div>
       </div>
       <div class="dif-row">
-        <div data-label="Critério">Aplicação prática</div>
-        <div data-label="Apostila comum">Teoria sem exemplo de uso</div>
-        <div data-label="Rumo ao 1000" class="yes">Dica de Ouro com frase-modelo em cada card</div>
+        <div class="dif-crit">Aplicação prática</div>
+        <div class="dif-cell dif-x">✕ Sabe a teoria, mas trava na hora de escrever</div>
+        <div class="dif-cell dif-check">✓ Tem a frase-modelo pronta pra aplicar na redação</div>
       </div>
       <div class="dif-row">
-        <div data-label="Critério">Impressão</div>
-        <div data-label="Apostila comum">Gasta tinta, frente e verso</div>
-        <div data-label="Rumo ao 1000" class="yes">Só frente, econômico</div>
+        <div class="dif-crit">Impressão</div>
+        <div class="dif-cell dif-x">✕ Gasta tinta com frente e verso</div>
+        <div class="dif-cell dif-check">✓ Imprime só frente, sem gasto extra</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="depoimentos section-tight">
+  <div class="wrap">
+    <span class="kicker" style="display:block; text-align:center;">Quem já testou</span>
+    <h2 class="center" style="font-size:clamp(26px,7.5vw,40px);">O que dizem sobre o método</h2>
+  </div>
+  <div class="depo-marquee">
+    <div class="depo-marquee-track">
+      <picture><source srcset="depo-lucas.avif" type="image/avif"><img src="depo-lucas.webp" width="500" height="701" alt="Depoimento de Lucas Ferreira via WhatsApp: os flashcards me salvaram muito"></picture>
+      <picture><source srcset="depo-anaclara.avif" type="image/avif"><img src="depo-anaclara.webp" width="500" height="701" alt="Depoimento de Ana Clara Ribeiro via WhatsApp: tirei 980 na redação"></picture>
+      <picture><source srcset="depo-gabriel.avif" type="image/avif"><img src="depo-gabriel.webp" width="500" height="701" alt="Depoimento de Gabriel Santos via WhatsApp: 940 na redação do enem 2025"></picture>
+      <picture><source srcset="depo-beatriz.avif" type="image/avif"><img src="depo-beatriz.webp" width="500" height="701" alt="Depoimento de Beatriz Nunes via WhatsApp: tirei 1000 na redação do enem 2025"></picture>
+      <picture><source srcset="depo-mariana.avif" type="image/avif"><img src="depo-mariana.webp" width="500" height="701" alt="Depoimento de Mariana Alves via WhatsApp: tirei 960 na redação do enem 2025"></picture>
+      <picture><source srcset="depo-lucas.avif" type="image/avif"><img src="depo-lucas.webp" width="500" height="701" loading="lazy" alt="Depoimento de Lucas Ferreira via WhatsApp"></picture>
+      <picture><source srcset="depo-anaclara.avif" type="image/avif"><img src="depo-anaclara.webp" width="500" height="701" loading="lazy" alt="Depoimento de Ana Clara Ribeiro via WhatsApp"></picture>
+      <picture><source srcset="depo-gabriel.avif" type="image/avif"><img src="depo-gabriel.webp" width="500" height="701" loading="lazy" alt="Depoimento de Gabriel Santos via WhatsApp"></picture>
+      <picture><source srcset="depo-beatriz.avif" type="image/avif"><img src="depo-beatriz.webp" width="500" height="701" loading="lazy" alt="Depoimento de Beatriz Nunes via WhatsApp"></picture>
+      <picture><source srcset="depo-mariana.avif" type="image/avif"><img src="depo-mariana.webp" width="500" height="701" loading="lazy" alt="Depoimento de Mariana Alves via WhatsApp"></picture>
     </div>
   </div>
 </section>
@@ -661,6 +710,11 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
   <div class="wrap">
     <span class="kicker" style="display:block; text-align:center;">Escolha seu plano</span>
     <h2 class="center" style="font-size:clamp(26px,7.5vw,40px); margin-bottom:30px;">Garanta o seu acesso</h2>
+
+    <div class="bonus-combo-foto">
+      <picture><source srcset="combo.avif" type="image/avif"><img src="combo.webp" width="900" height="1125" loading="lazy" alt="Tudo que vem no combo: Flashcards das 5 Competências, Banco de Repertório e Caderno de Exercícios"></picture>
+      <span class="bonus-combo-legenda">Tudo o que vem no combo de R$27,90</span>
+    </div>
 
     <div class="stack-valor">
       <div class="stack-item">
@@ -747,27 +801,6 @@ src="https://www.facebook.com/tr?id=977981641964568&ev=PageView&noscript=1"
     <div class="garantia-line" style="justify-content:center; margin-top:26px;">
       <picture><source srcset="selo.avif" type="image/avif"><img class="selo-garantia" src="selo.webp" width="300" height="299" loading="lazy" alt="Selo 7 dias de garantia" style="width:52px; height:52px;"></picture>
       <span><b>7 dias de garantia</b>Não gostou? Devolvemos 100% do valor, em qualquer plano.</span>
-    </div>
-  </div>
-</section>
-
-<section class="depoimentos section-tight">
-  <div class="wrap">
-    <span class="kicker" style="display:block; text-align:center;">Quem já testou</span>
-    <h2 class="center" style="font-size:clamp(26px,7.5vw,40px);">O que dizem sobre o método</h2>
-  </div>
-  <div class="depo-marquee">
-    <div class="depo-marquee-track">
-      <picture><source srcset="depo-lucas.avif" type="image/avif"><img src="depo-lucas.webp" width="500" height="701" alt="Depoimento de Lucas Ferreira via WhatsApp: os flashcards me salvaram muito"></picture>
-      <picture><source srcset="depo-anaclara.avif" type="image/avif"><img src="depo-anaclara.webp" width="500" height="701" alt="Depoimento de Ana Clara Ribeiro via WhatsApp: tirei 980 na redação"></picture>
-      <picture><source srcset="depo-gabriel.avif" type="image/avif"><img src="depo-gabriel.webp" width="500" height="701" alt="Depoimento de Gabriel Santos via WhatsApp: 940 na redação do enem 2025"></picture>
-      <picture><source srcset="depo-beatriz.avif" type="image/avif"><img src="depo-beatriz.webp" width="500" height="701" alt="Depoimento de Beatriz Nunes via WhatsApp: tirei 1000 na redação do enem 2025"></picture>
-      <picture><source srcset="depo-mariana.avif" type="image/avif"><img src="depo-mariana.webp" width="500" height="701" alt="Depoimento de Mariana Alves via WhatsApp: tirei 960 na redação do enem 2025"></picture>
-      <picture><source srcset="depo-lucas.avif" type="image/avif"><img src="depo-lucas.webp" width="500" height="701" loading="lazy" alt="Depoimento de Lucas Ferreira via WhatsApp"></picture>
-      <picture><source srcset="depo-anaclara.avif" type="image/avif"><img src="depo-anaclara.webp" width="500" height="701" loading="lazy" alt="Depoimento de Ana Clara Ribeiro via WhatsApp"></picture>
-      <picture><source srcset="depo-gabriel.avif" type="image/avif"><img src="depo-gabriel.webp" width="500" height="701" loading="lazy" alt="Depoimento de Gabriel Santos via WhatsApp"></picture>
-      <picture><source srcset="depo-beatriz.avif" type="image/avif"><img src="depo-beatriz.webp" width="500" height="701" loading="lazy" alt="Depoimento de Beatriz Nunes via WhatsApp"></picture>
-      <picture><source srcset="depo-mariana.avif" type="image/avif"><img src="depo-mariana.webp" width="500" height="701" loading="lazy" alt="Depoimento de Mariana Alves via WhatsApp"></picture>
     </div>
   </div>
 </section>
